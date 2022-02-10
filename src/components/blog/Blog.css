@@ -1,0 +1,96 @@
+article {
+  width: 350px;
+  height: 350px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 1rem;
+  transition: all 0.1s ease-in-out;
+}
+
+article:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+.BlogImg {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+.blog-body {
+  overflow: hidden;
+  margin: 0 5px;
+  margin: 1.2rem 0;
+  padding: 5px;
+}
+.blogHead {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 300;
+}
+.blogPara {
+  margin-top: 1rem;
+  overflow: hidden;
+  font-weight: 300;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.crud {
+  background: transparent;
+  border: transparent;
+  font-size: 25px;
+  cursor: pointer;
+}
+.crud:first-child {
+  color: rgb(10, 128, 10);
+  margin-right: 0.4rem;
+}
+.crud:last-child {
+  color: rgb(165, 12, 12);
+}
+.crud:first-child {
+  color: rgb(13, 167, 13);
+  margin-right: 0.4rem;
+}
+.crud:last-child:hover {
+  color: rgb(201, 14, 14);
+}
+
+@media screen and (max-width: 1100px) {
+  article {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    min-height: 100px;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease-in-out;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  article:hover .info {
+    width: 100%;
+    transform: translateY(0);
+  }
+}
+.blogHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

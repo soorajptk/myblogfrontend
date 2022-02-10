@@ -1,0 +1,152 @@
+.registerContainer {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0 auto;
+  position: relative;
+}
+
+.registerArticle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 40vw;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+}
+
+.registerHead {
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+.registerEmail {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.registerEmail > label {
+  margin-bottom: 0.5rem;
+}
+.registerEmail > input {
+  font-size: 16px;
+  border: none;
+  border-radius: 0.5rem;
+  border-bottom: 1px solid gray;
+  padding: 0.5rem 0;
+}
+.registerPassword > input {
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 16px;
+  border-bottom: 1px solid gray;
+  padding: 0.5rem 0;
+}
+.registerPassword {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.registerPassword > label {
+  margin-bottom: 0.5rem;
+}
+.registerBtn {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: teal;
+  padding: 0.4rem 3rem;
+}
+.errorInput {
+  border: 2px solid red !important;
+}
+.errorMsg {
+  color: rgba(255, 0, 0, 0.836);
+}
+.registerBtn:hover {
+  color: white;
+}
+.registerregister {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: teal;
+  color: white;
+  padding: 0.4rem 3rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .registerArticle {
+    max-width: 90vw;
+    margin-top: 1rem;
+  }
+
+  .registerHead {
+    text-align: center;
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .registerEmail {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .registerEmail > label {
+    margin-bottom: 0.5rem;
+  }
+  .registerEmail > input {
+    font-size: 16px;
+    border: none;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid gray;
+    padding: 0.5rem 0;
+  }
+  .registerPassword > input {
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid gray;
+    padding: 0.5rem 0;
+  }
+  .registerPassword {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .registerPassword > label {
+    margin-bottom: 0.5rem;
+  }
+  .registerBtn {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: teal;
+    padding: 0.4rem 3rem;
+  }
+  .errorInput {
+    border: 2px solid red !important;
+  }
+  .errorMsg {
+    color: rgba(255, 0, 0, 0.836);
+  }
+  .registerregister {
+    top: 5px;
+    right: 5px;
+  }
+}

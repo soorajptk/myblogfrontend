@@ -1,0 +1,42 @@
+.AboutOuter {
+  background-color: rgba(223, 221, 221, 0.849);
+  height: calc(100vh - 80px) !important;
+  position: relative;
+}
+.AboutContainer {
+  width: 100%;
+  max-width: 80vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 80vh;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.AboutImg {
+  margin-top: 1rem;
+  width: 200px;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 50%;
+}
+.Aboutheading {
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  margin-top: 1rem;
+}
+.AboutFooter {
+  margin: 2rem 3rem;
+  font-size: 20px;
+  line-height: 1.5;
+  font-style: italic;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 600px) {
+  .AboutContainer {
+    overflow: scroll;
+  }
+}

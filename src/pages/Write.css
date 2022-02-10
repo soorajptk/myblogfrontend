@@ -1,0 +1,93 @@
+.bgImg {
+  height: calc(100vh - 80px) !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  position: relative;
+}
+.edit-article {
+  width: 100%;
+  max-width: 70vw;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #fff;
+}
+.SingleBlogImg {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.img-form {
+  font-size: 28px;
+  position: relative;
+}
+.camera {
+  position: absolute;
+  bottom: 10px;
+  left: 4.5rem;
+  color: black;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.4);
+}
+.title > input {
+  border: none;
+  font-size: 25px;
+  margin: 1rem 0;
+  width: 100%;
+  padding: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title > input:focus {
+  outline: none;
+}
+
+.textarea > textarea {
+  font-size: 20px;
+  /* border: none; */
+  height: fit-content;
+  height: 200px;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+.btn-collection {
+  margin-bottom: 2rem;
+}
+.edit-btn {
+  margin-left: 1rem;
+  padding: 0.5rem 3.5rem;
+  float: right;
+  background: transparent;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(7, 109, 7);
+}
+
+.edit-btn:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .edit-article {
+    max-width: 95vw;
+  }
+  .title > input {
+    font-size: 18px;
+  }
+  .textarea > textarea {
+    height: 100px;
+    font-size: 14px;
+  }
+}

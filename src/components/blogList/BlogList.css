@@ -1,0 +1,10 @@
+.BlogList {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 95vw;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

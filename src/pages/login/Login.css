@@ -1,0 +1,98 @@
+.loginContainer {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0 auto;
+  position: relative;
+}
+
+.loginArticle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 40vw;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+}
+
+.loginHead {
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+.loginEmail {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.loginEmail > label {
+  margin-bottom: 0.5rem;
+}
+.loginEmail > input {
+  font-size: 16px;
+  border: none;
+  border-radius: 0.5rem;
+  border-bottom: 1px solid gray;
+  padding: 0.5rem 0;
+}
+.loginPassword > input {
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 16px;
+  border-bottom: 1px solid gray;
+  padding: 0.5rem 0;
+}
+.loginPassword {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.loginPassword > label {
+  margin-bottom: 0.5rem;
+}
+.LoginBtn {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: teal;
+  padding: 0.4rem 3rem;
+}
+.LoginBtn:hover {
+  color: white;
+}
+.Loginregister {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: teal;
+  color: white;
+  padding: 0.4rem 3rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.errorInput {
+  border: 2px solid red !important;
+}
+@media screen and (max-width: 600px) {
+  .loginArticle {
+    max-width: 90vw;
+  }
+  .Loginregister {
+    top: 0;
+    right: 0;
+    padding: 0.4rem 2rem;
+  }
+}

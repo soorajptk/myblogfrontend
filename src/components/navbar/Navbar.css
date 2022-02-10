@@ -1,0 +1,37 @@
+nav {
+  /* margin-bottom: 2rem; */
+  width: 100%;
+  background-color: rgb(107, 105, 105);
+}
+h1 {
+  font-size: 30px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-section {
+  width: 100%;
+  max-width: 95vw;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.linkNavbar {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.nav-links {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+.logoutUser {
+  background-color: transparent;
+  font-weight: 300;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
